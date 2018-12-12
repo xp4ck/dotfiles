@@ -1,0 +1,40 @@
+urxvt*color0:    #151b25
+urxvt*color1:    #7a3842
+urxvt*color2:    #387a42
+urxvt*color3:    #7a7a42
+urxvt*color4:    #334c71
+urxvt*color5:    #4c4c71
+urxvt*color6:    #326f9c
+urxvt*color7:    #ced1d8
+
+urxvt*color8:    #212121
+urxvt*color9:    #b14654
+urxvt*color10:   #46b154
+urxvt*color11:   #b1b154
+urxvt*color12:   #486da0
+urxvt*color13:   #6d6da0
+urxvt*color14:   #4499d5
+urxvt*color15:   #8f9195
+
+URxvt*background: #151b25
+URxvt*foreground: #ced1d8
+
+URxvt*saveLines: 1024
+
+URxvt*font: xft:Hack:pixelsize=14
+
+URxvt*scrollBar_right:  true
+URxvt*scrollstyle:      plain
+URxvt.scrollColor: 		#486da0
+
+URxvt*transparent: false
+URxvt.shading: 20
+
+URxvt.tabbed.new-button: no
+URxvt.tabbed.tabbar-fg: 12
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    14
+URxvt.tabbed.tab-bg:    4
+URxvt.tabbed.autohide: true
+URxvt.letterSpace: -1
+
