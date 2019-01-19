@@ -7,7 +7,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'davidhalter/jedi-vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'dracula/vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'  
@@ -15,13 +14,13 @@ call vundle#end()
 filetype on
 filetype plugin on
 filetype plugin indent on
-syn on
+syntax on
 set number
+set mouse=a
 set ruler
 set ttyfast
 set backspace=indent,eol,start
 set background=dark
-colorscheme dracula
 set t_Co=256
 set nobackup
 set nowritebackup
