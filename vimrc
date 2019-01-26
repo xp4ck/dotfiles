@@ -75,7 +75,7 @@ endif
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'dracula/vim'
+Plug 'arcticicestudio/nord-vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -175,6 +175,7 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set number
+colorscheme nord
 
 let no_buffers_menu=1
 
@@ -239,7 +240,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'bubblegum'
+" let g:airline_theme = 'bubblegum'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -488,7 +489,7 @@ augroup END
 " vim-python
 augroup vimrc-python
   autocmd!
-  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=79
+  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=120
       \ formatoptions+=croq softtabstop=4
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
@@ -549,3 +550,7 @@ let g:airline_symbols.paste     = 'ρ'
 let g:airline_symbols.paste     = 'Þ'
 let g:airline_symbols.paste     = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
+
+" Nord theme settings
+let g:nord_uniform_diff_background = 1
+let g:nord_italic_comments = 1

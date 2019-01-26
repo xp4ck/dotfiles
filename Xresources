@@ -1,27 +1,46 @@
-urxvt*color0:    #151b25
-urxvt*color1:    #7a3842
-urxvt*color2:    #387a42
-urxvt*color3:    #7a7a42
-urxvt*color4:    #334c71
-urxvt*color5:    #4c4c71
-urxvt*color6:    #326f9c
-urxvt*color7:    #ced1d8
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-urxvt*color8:    #212121
-urxvt*color9:    #b14654
-urxvt*color10:   #46b154
-urxvt*color11:   #b1b154
-urxvt*color12:   #486da0
-urxvt*color13:   #6d6da0
-urxvt*color14:   #4499d5
-urxvt*color15:   #8f9195
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
 
-URxvt*background: #151b25
-URxvt*foreground: #ced1d8
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
 URxvt*saveLines: 1024
 
-URxvt*font: xft:Hack:pixelsize=14
+URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=14
 
 URxvt*scrollBar_right:  true
 URxvt*scrollstyle:      plain
@@ -36,5 +55,6 @@ URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg:    14
 URxvt.tabbed.tab-bg:    4
 URxvt.tabbed.autohide: true
+URxvt.scrollBar: false
 URxvt.letterSpace: -1
 
