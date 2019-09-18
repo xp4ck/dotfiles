@@ -75,24 +75,11 @@ endif
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim'
 
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
-
-" c
-Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
-Plug 'ludwig/split-manpage.vim'
-
-
-" html
-"" HTML Bundle
-Plug 'hail2u/vim-css3-syntax'
-Plug 'gorodinskiy/vim-coloresque'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
-
 
 " javascript
 "" Javascript Bundle
@@ -175,7 +162,7 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set number
-colorscheme nord
+colorscheme dracula
 
 let no_buffers_menu=1
 
