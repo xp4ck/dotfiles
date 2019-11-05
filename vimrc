@@ -75,7 +75,7 @@ endif
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'dracula/vim'
+Plug 'phanviet/vim-monokai-pro'
 
 "*****************************************************************************
 "" Custom bundles
@@ -162,7 +162,8 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set number
-colorscheme dracula
+set termguicolors
+colorscheme monokai_pro
 
 let no_buffers_menu=1
 
@@ -171,33 +172,24 @@ set t_Co=256
 set guioptions=egmrti
 set gfn=Hack\ 10
 
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=7
-  endif
+let g:CSApprox_loaded = 1
+
+" IndentLine
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = 0
+let g:indentLine_char = '┆'
+let g:indentLine_faster = 1
+
+if $COLORTERM == 'gnome-terminal'
+set term=gnome-256color
 else
-  let g:CSApprox_loaded = 1
-
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
-
-  if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-  else
-    if $TERM == 'xterm'
-      set term=xterm-256color
-    endif
-  endif
+if $TERM == 'xterm'
+  set term=xterm-256color
+endif
 endif
 
 
-if &term =~ '256color'
-  set t_ut=
-endif
+set t_ut=
 
 
 "" Disable the blinking cursor.
@@ -491,6 +483,7 @@ let g:jedi#rename_command = "<leader>r"
 let g:jedi#show_call_signatures = "0"
 let g:jedi#completions_command = "<C-Space>"
 let g:jedi#smart_auto_mappings = 0
+autocmd FileType python setlocal completeopt-=preview
 
 " syntastic
 let g:syntastic_python_checkers=['python', 'flake8']
