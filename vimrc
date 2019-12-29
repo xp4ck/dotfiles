@@ -75,7 +75,7 @@ endif
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'phanviet/vim-monokai-pro'
+Plug 'dracula/vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -163,7 +163,7 @@ syntax on
 set ruler
 set number
 set termguicolors
-colorscheme monokai_pro
+colorscheme dracula
 
 let no_buffers_menu=1
 
@@ -378,6 +378,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 
 " syntastic
+let g:syntastic_python_checkers = ['pylama']
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
@@ -493,7 +494,6 @@ let g:airline#extensions#virtualenv#enabled = 1
 
 " Syntax highlight
 " Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
 let python_highlight_all = 1
 
 
