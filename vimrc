@@ -42,7 +42,6 @@ Plug 'w0rp/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -71,7 +70,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
 
 "*****************************************************************************
 "" Custom bundles
@@ -167,7 +166,7 @@ set ruler
 set number
 
 let no_buffers_menu=1
-silent! colorscheme dracula
+silent! colorscheme gruvbox
 
 set mousemodel=popup
 set t_Co=256
@@ -220,7 +219,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'dracula'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -543,10 +542,11 @@ endif
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=menuone,noselect,noinsert
 set shortmess+=c
-inoremap <c-c> <ESC>
-let ncm2#popup_delay = 5
+let ncm2#popup_delay = 3
 let ncm2#complete_length = [[1, 1]]
 let g:ncm2#matcher = 'substrfuzzy'
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 " ipdb breakpoint
 au FileType python map <silent> <leader>b oimport ipdb; ipdb.set_trace()<esc>
