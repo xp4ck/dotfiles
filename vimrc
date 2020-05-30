@@ -48,6 +48,7 @@ Plug 'roxma/nvim-yarp'
 Plug 'HansPinckaers/ncm2-jedi'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -70,7 +71,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'morhetz/gruvbox'
+Plug 'lifepillar/vim-gruvbox8'
 
 "*****************************************************************************
 "" Custom bundles
@@ -166,7 +167,7 @@ set ruler
 set number
 
 let no_buffers_menu=1
-silent! colorscheme gruvbox
+silent! colorscheme gruvbox8_hard
 
 set mousemodel=popup
 set t_Co=256
@@ -250,8 +251,8 @@ let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>p :NERDTreeFind<CR>
+nnoremap <silent> <leader>m :NERDTreeToggle<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
