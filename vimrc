@@ -41,7 +41,6 @@ Plug 'majutsushi/tagbar'
 Plug 'w0rp/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
-Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -49,6 +48,7 @@ Plug 'HansPinckaers/ncm2-jedi'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'ryanoasis/vim-devicons'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -71,7 +71,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'kaicataldo/material.vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -167,7 +167,13 @@ set ruler
 set number
 
 let no_buffers_menu=1
-silent! colorscheme gruvbox8_hard
+" set background=dark
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'default'
+colorscheme material
+if (has('termguicolors'))
+  set termguicolors
+endif
 
 set mousemodel=popup
 set t_Co=256
@@ -220,7 +226,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'material'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -552,3 +558,4 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 " ipdb breakpoint
 au FileType python map <silent> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 
+ let g:semshi#excluded_hl_group = ['local']
