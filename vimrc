@@ -49,6 +49,7 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'ryanoasis/vim-devicons'
+Plug 'isobit/vim-caddyfile'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
