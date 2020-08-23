@@ -72,7 +72,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'kaicataldo/material.vim'
+Plug 'morhetz/gruvbox'
 
 "*****************************************************************************
 "" Custom bundles
@@ -169,9 +169,7 @@ set number
 
 let no_buffers_menu=1
 " set background=dark
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'default'
-colorscheme material
+colorscheme gruvbox
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -227,7 +225,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'material'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
