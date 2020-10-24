@@ -50,6 +50,7 @@ Plug 'ncm2/ncm2-path'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'isobit/vim-caddyfile'
+Plug 'psf/black', {'branch': 'stable'}
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -168,7 +169,6 @@ set ruler
 set number
 
 let no_buffers_menu=1
-" set background=dark
 set background=dark
 colorscheme vim-material
 if (has('termguicolors'))
@@ -478,6 +478,12 @@ let g:jedi#smart_auto_mappings = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = "1"
+
+" black
+let g:black_linelength = 79
+let g:black_skip_string_normalization = 1
+
+" semshi
 
 " ale
 :call extend(g:ale_linters, {
