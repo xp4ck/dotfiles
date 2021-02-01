@@ -73,7 +73,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'hzchirs/vim-material'
+Plug 'morhetz/gruvbox'
 
 "*****************************************************************************
 "" Custom bundles
@@ -170,7 +170,7 @@ set number
 
 let no_buffers_menu=1
 set background=dark
-colorscheme vim-material
+colorscheme gruvbox
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -316,6 +316,10 @@ augroup vimrc-make-cmake
 augroup END
 
 set autoread
+
+" black
+let g:black_linelength = 79
+let g:black_skip_string_normalization = 1
 
 "*****************************************************************************
 "" Mappings
@@ -478,10 +482,6 @@ let g:jedi#smart_auto_mappings = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = "1"
-
-" black
-let g:black_linelength = 79
-let g:black_skip_string_normalization = 1
 
 " semshi
 
