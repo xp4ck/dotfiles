@@ -34,6 +34,13 @@
 ;; `nil' to disable it:
 (setq display-line-numbers-type t)
 
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable)
+)
+(setq elpy-rpc-virtualenv-path 'current)
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
