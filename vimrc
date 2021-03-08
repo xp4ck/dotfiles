@@ -73,7 +73,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -96,6 +96,7 @@ Plug 'jelera/vim-javascript-syntax'
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+Plug 'Vimjas/vim-python-pep8-indent'
 
 
 " typescript
@@ -170,7 +171,7 @@ set number
 
 let no_buffers_menu=1
 set background=dark
-colorscheme gruvbox
+colorscheme nord
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -226,7 +227,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'material'
+let g:airline_theme = 'nord'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -315,10 +316,14 @@ augroup vimrc-make-cmake
   autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
 augroup END
 
+"" yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 set autoread
 
 " black
 let g:black_linelength = 79
+let g:black_string_normalization = 0
 let g:black_skip_string_normalization = 1
 
 "*****************************************************************************
