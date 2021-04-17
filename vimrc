@@ -47,9 +47,11 @@ Plug 'roxma/nvim-yarp'
 Plug 'HansPinckaers/ncm2-jedi'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'isobit/vim-caddyfile'
+Plug 'ryanoasis/vim-devicons'
 Plug 'psf/black', {'branch': 'stable'}
 
 if isdirectory('/usr/local/opt/fzf')
@@ -73,7 +75,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -127,6 +129,10 @@ set fileencoding=utf-8
 set fileencodings=utf-8
 
 
+"" Transparent background
+autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+
+
 "" Fix backspace indent
 set backspace=indent,eol,start
 
@@ -168,10 +174,10 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set number
+set cursorline
 
 let no_buffers_menu=1
-set background=dark
-colorscheme nord
+colorscheme dracula
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -227,7 +233,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'nord'
+let g:airline_theme = 'dracula'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -321,10 +327,6 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 set autoread
 
-" black
-let g:black_linelength = 79
-let g:black_string_normalization = 0
-let g:black_skip_string_normalization = 1
 
 "*****************************************************************************
 "" Mappings
