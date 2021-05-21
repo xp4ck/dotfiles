@@ -28,7 +28,7 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" Plug install packages
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -37,21 +37,16 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/CSApprox'
 Plug 'Raimondi/delimitMate'
-Plug 'majutsushi/tagbar'
-Plug 'w0rp/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-Plug 'HansPinckaers/ncm2-jedi'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'isobit/vim-caddyfile'
-Plug 'ryanoasis/vim-devicons'
 Plug 'psf/black', {'branch': 'stable'}
 
 if isdirectory('/usr/local/opt/fzf')
@@ -97,6 +92,7 @@ Plug 'jelera/vim-javascript-syntax'
 " python
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
+Plug 'ncm2/ncm2-jedi'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 Plug 'Vimjas/vim-python-pep8-indent'
 
@@ -153,6 +149,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+set updatetime=250
 
 set fileformats=unix,dos,mac
 
@@ -262,7 +260,7 @@ let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 50
+let g:NERDTreeWinSize = 30
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <leader>p :NERDTreeFind<CR>
 nnoremap <silent> <leader>m :NERDTreeToggle<CR>
@@ -489,12 +487,6 @@ let g:jedi#smart_auto_mappings = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = "1"
-
-" semshi
-
-" ale
-:call extend(g:ale_linters, {
-    \'python': ['flake8'], })
 
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
