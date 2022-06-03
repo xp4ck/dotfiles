@@ -40,7 +40,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'isobit/vim-caddyfile'
-Plug 'psf/black', {'branch': 'stable'}
+Plug 'psf/black', { 'branch': 'stable' }
+Plug 'fisadev/vim-isort'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Kachyz/vim-gitmoji'
 
@@ -61,7 +62,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 "" Color
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 
 "*****************************************************************************
 "" Custom bundles
@@ -169,7 +170,7 @@ set nu rnu
 set cursorline
 
 let no_buffers_menu=1
-colorscheme gruvbox
+colorscheme onedark
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -225,7 +226,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'onedark'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
