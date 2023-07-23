@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+local buffers_api = require("buffers")
 
 -- telescope
 local builtin = require('telescope.builtin')
@@ -19,3 +20,8 @@ vim.keymap.set('n', '<C-n>', '<cmd> NvimTreeToggle <CR>', {})
 vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- bufferline
+vim.keymap.set('n', '<tab>', '<cmd> BufferLineCycleNext <CR>')
+vim.keymap.set('n', '<S-Tab>', '<cmd> BufferLineCyclePrev <CR>')
+vim.keymap.set('n', '<leader>x', '<cmd>bd<CR><bar><cmd>BufferLineCycleNext<CR>')
