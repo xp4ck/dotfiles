@@ -3,6 +3,18 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
+
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+require('lspconfig').pyright.setup {
+    settings = {
+        python = {
+            analysis = {
+                reportGeneralTypeIssues = false
+            }
+        }
+    }
+}
+
 lsp.set_preferences({
   sign_icons = { }
 })
