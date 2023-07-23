@@ -29,8 +29,8 @@ return require('packer').startup(function(use)
       }
   }
   use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
-  use 'tanvirtin/monokai.nvim'
   use 'windwp/nvim-autopairs'
   use 'terrortylor/nvim-comment'
+  use 'Mofiqul/dracula.nvim'
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
