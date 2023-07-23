@@ -32,4 +32,5 @@ return require('packer').startup(function(use)
   use 'tanvirtin/monokai.nvim'
   use 'windwp/nvim-autopairs'
   use 'terrortylor/nvim-comment'
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
