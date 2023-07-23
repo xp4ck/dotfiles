@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-local buffers_api = require("buffers")
 
 -- telescope
 local builtin = require('telescope.builtin')
