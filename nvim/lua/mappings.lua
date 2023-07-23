@@ -11,3 +11,10 @@ vim.keymap.set('n', '<C-h>', '<C-w>h', {})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {})
+
+-- nvim-tree
+vim.keymap.set('n', '<C-n>', '<cmd> NvimTreeToggle <CR>', {})
+
+
+-- vim-specific
+vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})
