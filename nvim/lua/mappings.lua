@@ -5,7 +5,6 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fw', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
-vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 
 -- windows
 vim.keymap.set('n', '<C-h>', '<C-w>h', {})
@@ -26,3 +25,11 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', '<tab>', '<cmd> BufferLineCycleNext <CR>')
 vim.keymap.set('n', '<S-Tab>', '<cmd> BufferLineCyclePrev <CR>')
 vim.keymap.set('n', '<leader>x', '<cmd>bd<CR><bar><cmd>BufferLineCycleNext<CR>')
+
+-- debugging
+vim.keymap.set('n', '<leader>b', '<cmd>DapToggleBreakpoint<CR>')
+vim.keymap.set('n', '<leader>bc', '<cmd>DapContinue<CR>')
+vim.keymap.set('n', '<leader>bs', '<cmd>DapStepOver<CR>')
+vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepInto<CR>')
+vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepOut<CR>')
+vim.keymap.set('n', '<leader>rp', '<cmd>DapToggleRepl<CR>')
