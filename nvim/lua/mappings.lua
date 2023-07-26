@@ -14,7 +14,8 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', {})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {})
 
 -- nvim-tree
-vim.keymap.set('n', '<C-n>', '<cmd> NvimTreeToggle <CR>', {})
+vim.keymap.set('n', '<C-n>', '<cmd> NvimTreeFindFileToggle <CR>', {})
+vim.keymap.set('n', '<C-S-n>', '<cmd> NvimTreeToggle <CR>', {})
 
 -- vim-specific
 vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})
