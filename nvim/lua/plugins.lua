@@ -36,4 +36,12 @@ return require('packer').startup(function(use)
   use "mfussenegger/nvim-dap"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use "leoluz/nvim-dap-go"
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  use {
+      'folke/todo-comments.nvim',
+      requires = { "nvim-tree/nvim-web-devicons" }
+  }
 end)
