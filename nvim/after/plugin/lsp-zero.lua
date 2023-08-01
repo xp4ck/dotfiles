@@ -14,10 +14,11 @@ require('lspconfig').pyright.setup {
     settings = {
         python = {
             analysis = {
-                reportGeneralTypeIssues = false
-            }
-        }
-    }
+                reportGeneralTypeIssues = false,
+                typeCheckingMode = "off",
+            },
+        },
+    },
 }
 
 

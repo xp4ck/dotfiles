@@ -14,3 +14,4 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.updatetime = 50
 vim.opt.encoding = "UTF-8"
+vim.opt.clipboard = "unnamedplus"

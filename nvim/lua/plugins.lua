@@ -44,4 +44,5 @@ return require('packer').startup(function(use)
       'folke/todo-comments.nvim',
       requires = { "nvim-tree/nvim-web-devicons" }
   }
+  use "lewis6991/gitsigns.nvim"
 end)

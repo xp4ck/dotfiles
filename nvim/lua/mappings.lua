@@ -34,3 +34,9 @@ vim.keymap.set('n', '<leader>bs', '<cmd>DapStepOver<CR>')
 vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepInto<CR>')
 vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepOut<CR>')
 vim.keymap.set('n', '<leader>rp', '<cmd>DapToggleRepl<CR>')
+
+-- git
+vim.keymap.set('n', '<leader>gs', '<cmd>Git<CR>')
+vim.keymap.set('n', '<leader>nh', '<cmd>Gitsigns next_hunk<CR>')
+vim.keymap.set('n', '<leader>ph', '<cmd>Gitsigns prev_hunk<CR>')
+vim.keymap.set('n', '<leader>sh', '<cmd>Gitsigns stage_hunk<CR>')
