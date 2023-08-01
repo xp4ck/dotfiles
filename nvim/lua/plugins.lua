@@ -45,4 +45,13 @@ return require('packer').startup(function(use)
       requires = { "nvim-tree/nvim-web-devicons" }
   }
   use "lewis6991/gitsigns.nvim"
+  use {
+  "nvim-neotest/neotest",
+    requires = {
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
+        "antoinemadec/FixCursorHold.nvim"
+    }
+  }
+  use {"nvim-neotest/neotest-python"}
 end)
