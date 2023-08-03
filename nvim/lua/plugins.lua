@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
   use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
   use 'windwp/nvim-autopairs'
   use 'terrortylor/nvim-comment'
-  use 'Mofiqul/dracula.nvim'
+  use { "ellisonleao/gruvbox.nvim" }
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use "mfussenegger/nvim-dap"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }

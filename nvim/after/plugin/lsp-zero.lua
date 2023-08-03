@@ -10,15 +10,17 @@ lsp.set_preferences({
 -- lsp server setups
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 require('lspconfig').gopls.setup{}
-require('lspconfig').pyright.setup {
+require('lspconfig').pylsp.setup{
     settings = {
-        python = {
-            analysis = {
-                reportGeneralTypeIssues = false,
-                typeCheckingMode = "off",
-            },
-        },
-    },
+        pylsp = {
+            plugins = {
+                pycodestyle = {enabled = false},
+                mccabe = {enabled = false},
+                pyflakes = {enabled = false},
+                flake8 = {enabled = false},
+            }
+        }
+    }
 }
 
 
