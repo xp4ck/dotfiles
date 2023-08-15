@@ -55,5 +55,4 @@ return require('packer').startup(function(use)
     }
   }
   use {"nvim-neotest/neotest-python"}
-  use {"declancm/windex.nvim"}
 end)
