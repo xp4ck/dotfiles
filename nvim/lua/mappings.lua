@@ -28,15 +28,23 @@ vim.keymap.set('n', '<S-Tab>', '<cmd> BufferLineCyclePrev <CR>')
 vim.keymap.set('n', '<leader>x', '<cmd>bd<CR><bar><cmd>BufferLineCycleNext<CR>')
 
 -- debugging
-vim.keymap.set('n', '<leader>b', '<cmd>DapToggleBreakpoint<CR>')
-vim.keymap.set('n', '<leader>bc', '<cmd>DapContinue<CR>')
-vim.keymap.set('n', '<leader>bs', '<cmd>DapStepOver<CR>')
-vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepInto<CR>')
-vim.keymap.set('n', '<leader>bsi', '<cmd>DapStepOut<CR>')
-vim.keymap.set('n', '<leader>rp', '<cmd>DapToggleRepl<CR>')
+vim.keymap.set('n', '<leader>db', '<cmd>DapToggleBreakpoint<CR>')
+vim.keymap.set('n', '<leader>dc', '<cmd>DapContinue<CR>')
+vim.keymap.set('n', '<leader>ds', '<cmd>DapStepOver<CR>')
+vim.keymap.set('n', '<leader>dsi', '<cmd>DapStepInto<CR>')
+vim.keymap.set('n', '<leader>dso', '<cmd>DapStepOut<CR>')
+vim.keymap.set('n', '<leader>drp', '<cmd>DapToggleRepl<CR>')
+vim.keymap.set('n', '<leader>dpp', '<cmd>lua require("dapui").toggle()<CR>')
 
 -- git
 vim.keymap.set('n', '<leader>gs', '<cmd>Git<CR>')
 vim.keymap.set('n', '<leader>nh', '<cmd>Gitsigns next_hunk<CR>')
 vim.keymap.set('n', '<leader>ph', '<cmd>Gitsigns prev_hunk<CR>')
 vim.keymap.set('n', '<leader>sh', '<cmd>Gitsigns stage_hunk<CR>')
+
+-- neotest
+vim.keymap.set('n', '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>")
+vim.keymap.set('n', '<leader>trd', "<cmd>lua require('neotest').run.run({strategy = 'dap'})<CR>")
+vim.keymap.set('n', '<leader>trs', "<cmd>lua require('neotest').run.stop()<CR>")
+vim.keymap.set('n', '<leader>ts', "<cmd>lua require('neotest').summary.toggle()<CR>")
+vim.keymap.set('n', '<leader>to', "<cmd>lua require('neotest').output_panel.toggle()<CR>")

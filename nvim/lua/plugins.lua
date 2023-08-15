@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use "mfussenegger/nvim-dap"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use "mfussenegger/nvim-dap-python"
   use "leoluz/nvim-dap-go"
   use {
       'nvim-lualine/lualine.nvim',
@@ -54,4 +55,5 @@ return require('packer').startup(function(use)
     }
   }
   use {"nvim-neotest/neotest-python"}
+  use {"declancm/windex.nvim"}
 end)
