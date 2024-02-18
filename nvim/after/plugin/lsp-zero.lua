@@ -9,7 +9,7 @@ lsp.set_preferences({
 
 -- lsp server setups
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
-require('lspconfig').gopls.setup{}
+-- require('lspconfig').gopls.setup{}
 require('lspconfig').pylsp.setup{
     settings = {
         pylsp = {

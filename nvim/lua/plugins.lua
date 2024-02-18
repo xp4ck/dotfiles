@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
     }
   }
   use {"nvim-neotest/neotest-python"}
+  use "shaunsingh/nord.nvim"
+  use "fatih/vim-go"
 end)

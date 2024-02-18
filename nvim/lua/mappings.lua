@@ -41,6 +41,7 @@ vim.keymap.set('n', '<leader>gs', '<cmd>Git<CR>')
 vim.keymap.set('n', '<leader>nh', '<cmd>Gitsigns next_hunk<CR>')
 vim.keymap.set('n', '<leader>ph', '<cmd>Gitsigns prev_hunk<CR>')
 vim.keymap.set('n', '<leader>sh', '<cmd>Gitsigns stage_hunk<CR>')
+vim.keymap.set('n', '<leader>hp', '<cmd>Gitsigns preview_hunk_inline<CR>')
 
 -- neotest
 vim.keymap.set('n', '<leader>tr', "<cmd>lua require('neotest').run.run()<CR>")
