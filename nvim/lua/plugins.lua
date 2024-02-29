@@ -28,7 +28,6 @@ return require('packer').startup(function(use)
         {'L3MON4D3/LuaSnip'},     -- Required
       }
   }
-  use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
   use({ "miikanissi/modus-themes.nvim" })
   use 'windwp/nvim-autopairs'
   use 'terrortylor/nvim-comment'
@@ -55,6 +54,12 @@ return require('packer').startup(function(use)
     }
   }
   use {"nvim-neotest/neotest-python"}
-  use "shaunsingh/nord.nvim"
   use "fatih/vim-go"
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  }
+  use "folke/tokyonight.nvim"
+  use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
+
 end)
