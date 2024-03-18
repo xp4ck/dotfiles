@@ -61,5 +61,6 @@ return require('packer').startup(function(use)
   }
   use "folke/tokyonight.nvim"
   use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
+  use 'kuznetsss/meadow.nvim'
 
 end)

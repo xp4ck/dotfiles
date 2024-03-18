@@ -22,6 +22,18 @@ require('lspconfig').pylsp.setup{
         }
     }
 }
+lsp.format_on_save({
+  format_opts = {
+
+    async = false,
+    timeout_ms = 5000,
+  },
+
+  servers = {
+    ['pylsp'] = {'python'},
+    ['sqls'] = {'sql'},
+  }
+})
 
 
 lsp.setup()
