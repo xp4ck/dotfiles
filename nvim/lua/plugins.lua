@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
   use 'terrortylor/nvim-comment'
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use "mfussenegger/nvim-dap"
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
   use "mfussenegger/nvim-dap-python"
   use "leoluz/nvim-dap-go"
   use {
@@ -62,5 +62,5 @@ return require('packer').startup(function(use)
   use "folke/tokyonight.nvim"
   use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
   use 'kuznetsss/meadow.nvim'
-
+  use { "ellisonleao/gruvbox.nvim" }
 end)
