@@ -9,6 +9,7 @@ vim.opt.wrap = false
 vim.opt.smartindent = true
 vim.opt.swapfile = false
 vim.opt.backup = false
+vim.opt.showmode = false
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = true

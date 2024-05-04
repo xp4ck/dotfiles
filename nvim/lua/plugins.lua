@@ -40,10 +40,6 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  use {
-      'folke/todo-comments.nvim',
-      requires = { "nvim-tree/nvim-web-devicons" }
-  }
   use "lewis6991/gitsigns.nvim"
   use {
   "nvim-neotest/neotest",
@@ -59,8 +55,9 @@ return require('packer').startup(function(use)
     "nvim-telescope/telescope-file-browser.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
-  use "folke/tokyonight.nvim"
   use{'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}}
-  use 'kuznetsss/meadow.nvim'
-  use { "ellisonleao/gruvbox.nvim" }
+  use {'nyoom-engineering/oxocarbon.nvim'}
+  use 'jacoborus/tender.vim'
+  use "craftzdog/solarized-osaka.nvim"
+  use 'Yagua/nebulous.nvim'
 end)
