@@ -1,20 +1,20 @@
 return require('lazy').setup({
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.2',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', version = '0.1.6',
+    dependencies = { {'nvim-lua/plenary.nvim'} }
   },
-  'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'},
+  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   'tpope/vim-fugitive',
   {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
-      requires = {
+      dependencies = {
         -- LSP Support
         {'neovim/nvim-lspconfig'},             -- Required
         {                                      -- Optional
           'williamboman/mason.nvim',
-          run = function()
-        pcall(vim.api.nvim_command, 'MasonUpdate')
+          build = function()
+            pcall(vim.api.nvim_command, 'MasonUpdate')
           end,
         },
         {'williamboman/mason-lspconfig.nvim'}, -- Optional
@@ -28,33 +28,13 @@ return require('lazy').setup({
   { "miikanissi/modus-themes.nvim" },
   'windwp/nvim-autopairs',
   'terrortylor/nvim-comment',
-  {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'},
-  "mfussenegger/nvim-dap",
-  { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
-  "mfussenegger/nvim-dap-python",
-  "leoluz/nvim-dap-go",
-  {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  },
+  {'akinsho/bufferline.nvim', version = "v4.5.3", dependencies = 'nvim-tree/nvim-web-devicons'},
   "lewis6991/gitsigns.nvim",
-  {
-  "nvim-neotest/neotest",
-    requires = {
-        "nvim-lua/plenary.nvim",
-        "nvim-treesitter/nvim-treesitter",
-        "antoinemadec/FixCursorHold.nvim"
-    }
-  },
-  {"nvim-neotest/neotest-python"},
   "fatih/vim-go",
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  },
-  {'nvim-tree/nvim-tree.lua', requires = {{'nvim-tree/nvim-web-devicons'}}},
+  {'nvim-tree/nvim-tree.lua', dependencies = {{'nvim-tree/nvim-web-devicons'}}},
   {'nyoom-engineering/oxocarbon.nvim'},
   'jacoborus/tender.vim',
   "craftzdog/solarized-osaka.nvim",
   'Yagua/nebulous.nvim',
+  {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
   })

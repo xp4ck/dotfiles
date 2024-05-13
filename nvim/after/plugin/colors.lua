@@ -1,5 +1,5 @@
 require("modus-themes").setup({
-    style = "modus_operandi",
+    style = "modus_vivendi",
     transparent = false,
 })
 -- require'meadow'.setup {
