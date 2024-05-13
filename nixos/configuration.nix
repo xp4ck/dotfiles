@@ -5,14 +5,6 @@
 { config, lib, pkgs, ... }:
 let
   unstable = import <nixos-unstable> { config =  { allowUnfree = true; }; };
-  nvimFromGitHub = ref: repo: pkgs.vimUtils.buildVimPlugin {
-    pname = "${lib.strings.sanitizeDerivationName repo}";
-    version = ref;
-    src = builtins.fetchGit {
-      url = "https://github.com/${repo}.git";
-      ref = ref;
-    };
-  };
 in {
   imports =
     [ # Include the results of the hardware scan.
@@ -23,7 +15,7 @@ in {
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "xp4ck-peka";
+  networking.hostName = "peka"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
@@ -150,6 +142,18 @@ in {
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
+  services.udev.packages = with pkgs; [
+    via
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -159,9 +163,12 @@ in {
     eza
     alacritty
     unstable.go
-    python3
+    (python3.withPackages(ps: with ps; [ python-lsp-server ]))
     lua-language-server
     unzip
+    gcc
+    ripgrep
+    vial
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -173,6 +180,9 @@ in {
       telegram-desktop
       bitwarden
       sublime-merge
+      discord
+      jetbrains.datagrip
+      postgresql
     ];
     shell = pkgs.zsh;
   };
@@ -215,6 +225,7 @@ in {
       bind l select-pane -R
     '';
   };
+  programs.noisetorch.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
