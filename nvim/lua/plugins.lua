@@ -37,4 +37,11 @@ return require('lazy').setup({
   "craftzdog/solarized-osaka.nvim",
   'Yagua/nebulous.nvim',
   {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    name = "solarized",
+  },
+  { "rose-pine/neovim", name = "rose-pine" }
   })

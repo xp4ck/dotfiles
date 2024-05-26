@@ -20,6 +20,7 @@ in {
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.wireguard.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
@@ -104,7 +105,7 @@ in {
     forceFullCompositionPipeline = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.production;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
 
   # Configure keymap in X11
@@ -161,12 +162,13 @@ in {
     curl
     git
     eza
-    alacritty
+    unstable.alacritty
     unstable.go
     (python3.withPackages(ps: with ps; [ python-lsp-server ]))
     lua-language-server
     unzip
     gcc
+    gnumake
     ripgrep
     vial
   ];
@@ -183,6 +185,9 @@ in {
       discord
       jetbrains.datagrip
       postgresql
+      ollama
+      unstable.nekoray
+      vscode
     ];
     shell = pkgs.zsh;
   };
@@ -226,6 +231,11 @@ in {
     '';
   };
   programs.noisetorch.enable = true;
+
+  services.ollama = {
+      enable = true;
+      sandbox = true;
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
