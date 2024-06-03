@@ -32,16 +32,6 @@ return require('lazy').setup({
   "lewis6991/gitsigns.nvim",
   "fatih/vim-go",
   {'nvim-tree/nvim-tree.lua', dependencies = {{'nvim-tree/nvim-web-devicons'}}},
-  {'nyoom-engineering/oxocarbon.nvim'},
-  'jacoborus/tender.vim',
-  "craftzdog/solarized-osaka.nvim",
-  'Yagua/nebulous.nvim',
   {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
-  {
-    'maxmx03/solarized.nvim',
-    lazy = false,
-    priority = 1000,
-    name = "solarized",
-  },
-  { "rose-pine/neovim", name = "rose-pine" }
+  {"ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
   })
