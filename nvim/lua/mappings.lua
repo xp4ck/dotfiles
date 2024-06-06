@@ -11,9 +11,8 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', {})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {})
 
--- nvim-tree
-vim.keymap.set('n', '<C-n>', '<cmd> NvimTreeFindFileToggle <CR>', {})
-vim.keymap.set('n', '<C-S-n>', '<cmd> NvimTreeToggle <CR>', {})
+-- neo-tree
+vim.keymap.set('n', '<C-n>', '<cmd> Neotree toggle=true source=git_status reveal=true<CR>', {})
 
 -- vim-specific
 vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})

@@ -25,7 +25,7 @@ return require('lazy').setup({
         {'L3MON4D3/LuaSnip'},     -- Required
       }
   },
-  { "miikanissi/modus-themes.nvim" },
+  { "miikanissi/modus-themes.nvim", priority = 1000},
   'windwp/nvim-autopairs',
   'terrortylor/nvim-comment',
   {'akinsho/bufferline.nvim', version = "v4.5.3", dependencies = 'nvim-tree/nvim-web-devicons'},
@@ -33,5 +33,13 @@ return require('lazy').setup({
   "fatih/vim-go",
   {'nvim-tree/nvim-tree.lua', dependencies = {{'nvim-tree/nvim-web-devicons'}}},
   {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
-  {"ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
   })
