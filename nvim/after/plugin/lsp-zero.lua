@@ -17,23 +17,11 @@ require('lspconfig').pylsp.setup{
                 pycodestyle = {enabled = false},
                 mccabe = {enabled = false},
                 pyflakes = {enabled = false},
-                flake8 = {enabled = false},
+                flake8 = {enabled = true},
             }
         }
     }
 }
-lsp.format_on_save({
-  format_opts = {
-
-    async = false,
-    timeout_ms = 5000,
-  },
-
-  servers = {
-    ['pylsp'] = {'python'},
-    ['sqls'] = {'sql'},
-  }
-})
 
 
 lsp.setup()

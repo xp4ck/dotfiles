@@ -1,6 +1,6 @@
 return require('lazy').setup({
   {
-    'nvim-telescope/telescope.nvim', version = '0.1.6',
+    'nvim-telescope/telescope.nvim', version = '0.1.x',
     dependencies = { {'nvim-lua/plenary.nvim'} }
   },
   {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
@@ -28,7 +28,7 @@ return require('lazy').setup({
   { "miikanissi/modus-themes.nvim", priority = 1000},
   'windwp/nvim-autopairs',
   'terrortylor/nvim-comment',
-  {'akinsho/bufferline.nvim', version = "v4.5.3", dependencies = 'nvim-tree/nvim-web-devicons'},
+  {'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
   "lewis6991/gitsigns.nvim",
   "fatih/vim-go",
   {'nvim-tree/nvim-tree.lua', dependencies = {{'nvim-tree/nvim-web-devicons'}}},
