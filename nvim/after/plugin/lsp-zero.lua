@@ -67,6 +67,7 @@ lspconfig.pylsp.setup{
         }
     }
 }
+lspconfig.gopls.setup{}
 
 
 cmp.setup({
