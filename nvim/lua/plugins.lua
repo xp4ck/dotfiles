@@ -12,12 +12,12 @@ return require('lazy').setup({
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
   { "miikanissi/modus-themes.nvim", priority = 1000},
-  { 'maxmx03/solarized.nvim', priority = 1000},
+  { 'marko-cerovac/material.nvim' },
   'windwp/nvim-autopairs',
   'terrortylor/nvim-comment',
   {'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
   "lewis6991/gitsigns.nvim",
-  "fatih/vim-go",
+  -- "fatih/vim-go",
   {'nvim-tree/nvim-tree.lua', dependencies = {{'nvim-tree/nvim-web-devicons'}}},
   {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
   {
@@ -28,5 +28,22 @@ return require('lazy').setup({
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
     }
-  }
-  })
+  },
+  {
+      'rktjmp/lush.nvim',
+      { dir = '/home/kek/.config/nvim/colors', lazy = true},
+  },
+  {
+    "ray-x/go.nvim",
+    dependencies = {  -- optional packages
+      "ray-x/guihua.lua",
+    },
+    config = function()
+      require("go").setup()
+    end,
+    event = {"CmdlineEnter"},
+    ft = {"go", 'gomod'},
+    build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+  },
+  { "oonamo/ef-themes.nvim" }
+})
