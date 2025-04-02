@@ -30,10 +30,6 @@ return require('lazy').setup({
     }
   },
   {
-      'rktjmp/lush.nvim',
-      { dir = '/home/kek/.config/nvim/colors', lazy = true},
-  },
-  {
     "ray-x/go.nvim",
     dependencies = {  -- optional packages
       "ray-x/guihua.lua",
