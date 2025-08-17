@@ -1,21 +1,21 @@
 -- require("modus-themes").setup({
 --     style = "auto",
 --     transparent = false,
--- }
-require("ef-themes").setup({
-    light = "ef-eagle",
-    dark = "ef-bio",
-    transparent = false,
-    modules = {
-        gitsigns = true,
-        -- telescope = true,
-        fzf = true,
-        cmp = true,
-    }
-
-})
-vim.o.background = 'light'
-vim.cmd.colorscheme 'ef-theme'
+-- })
+-- require("ef-themes").setup({
+--     light = "ef-eagle",
+--     dark = "ef-elea-dark",
+--     transparent = false,
+--     modules = {
+--         gitsigns = true,
+--         telescope = true,
+--         fzf = true,
+--         cmp = true,
+--     }
+--
+-- })
+vim.g.sonokai_style = 'atlantis'
+vim.cmd.colorscheme 'sonokai'
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })

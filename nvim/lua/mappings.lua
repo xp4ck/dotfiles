@@ -13,6 +13,7 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', {})
 
 -- neo-tree
 vim.keymap.set('n', '<C-n>', '<cmd> Neotree toggle=true source=filesystem reveal=true<CR>', {})
+vim.keymap.set('n', '<C-g>', '<cmd> Neotree toggle=true source=git_status reveal=true<CR>', {})
 
 -- vim-specific
 vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})
