@@ -1,64 +1,3 @@
-# Colors Ef-Frost
-# [colors.normal]
-# black = '#eaefef'
-# red = '#c42d2f'
-# green = '#008a00'
-# yellow = '#aa6100'
-# blue = '#004fc0'
-# magenta = '#aa44c5'
-# cyan = '#1f6fbf'
-# white = '#232323'
-# [colors.bright]
-# black = '#b5b8b8'
-# red = '#cf2f4f'
-# green = '#00845f'
-# yellow = '#996c4f'
-# blue = '#065fff'
-# magenta = '#7f5ae0'
-# cyan = '#007a85'
-# white = '#66657f'
-# [colors.cursor]
-# cursor = '#0055bb'
-# text = '#fcffff'
-# [colors.primary]
-# background = '#fcffff'
-# foreground = '#232323'
-# [colors.selection]
-# background = '#d4eaf3'
-# text = '#232323'
-##################
-
-
-# Colors Ef-Eagle
-[colors.normal]
-black = '#e4dbc0'
-red = '#882000'
-green = '#226022'
-yellow = '#6b4500'
-blue = '#113384'
-magenta = '#822478'
-cyan = '#125a7f'
-white = '#231a1f'
-[colors.bright]
-black = '#aea88e'
-red = '#8f0038'
-green = '#006e50'
-yellow = '#775228'
-blue = '#000080'
-magenta = '#50119f'
-cyan = '#00676f'
-white = '#685f53'
-[colors.cursor]
-cursor = '#774400'
-text = '#f1ecd0'
-[colors.primary]
-background = '#f1ecd0'
-foreground = '#231a1f'
-[colors.selection]
-background = '#ddc5af'
-text = '#231a1f'
-###################
-
 # Colors Modus-Operandi
 # [colors.normal]
 # black = '#f2f2f2'
@@ -88,6 +27,66 @@ text = '#231a1f'
 # background = '#bdbdbd'
 # text = '#000000'
 #####################
+
+# Colors Modus-Vivendi
+# [colors.normal]
+# black = '#1e1e1e'
+# red = '#ff5f59'
+# green = '#44bc44'
+# yellow = '#d0bc00'
+# blue = '#2fafff'
+# magenta = '#feacd0'
+# cyan = '#00d3d0'
+# white = '#ffffff'
+# [colors.bright]
+# black = '#535353'
+# red = '#ff7f9f'
+# green = '#00c06f'
+# yellow = '#dfaf7a'
+# blue = '#00bcff'
+# magenta = '#b6a0ff'
+# cyan = '#6ae4b9'
+# white = '#989898'
+# [colors.cursor]
+# cursor = '#ffffff'
+# text = '#000000'
+# [colors.primary]
+# background = '#000000'
+# foreground = '#ffffff'
+# [colors.selection]
+# background = '#5a5a5a'
+# text = '#ffffff'
+####################
+
+# Colors Ef-Elea-Dark
+[colors.normal]
+black = '#303332'
+red = '#ff656a'
+green = '#7fc87f'
+yellow = '#cac85f'
+blue = '#57aff6'
+magenta = '#f59acf'
+cyan = '#6fcfd2'
+white = '#eaf2ef'
+[colors.bright]
+black = '#5e6160'
+red = '#fa7f88'
+green = '#50cf89'
+yellow = '#cfb27f'
+blue = '#62cfef'
+magenta = '#cfaaff'
+cyan = '#60d5c2'
+white = '#969faf'
+[colors.cursor]
+cursor = '#ef7fa8'
+text = '#222524'
+[colors.primary]
+background = '#222524'
+foreground = '#eaf2ef'
+[colors.selection]
+background = '#543040'
+text = '#eaf2ef'
+####
 
 [env]
 TERM = "xterm-256color"
