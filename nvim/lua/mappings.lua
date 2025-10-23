@@ -15,6 +15,8 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', {})
 vim.keymap.set('n', '<C-n>', '<cmd> Neotree toggle=true source=filesystem reveal=true<CR>', {})
 vim.keymap.set('n', '<C-g>', '<cmd> Neotree toggle=true source=git_status reveal=true<CR>', {})
 
+-- outline
+
 -- vim-specific
 vim.keymap.set('n', '<leader><leader>', '<cmd> noh <CR><CR>', {})
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
@@ -48,3 +50,6 @@ vim.keymap.set('n', '<leader>trd', "<cmd>lua require('neotest').run.run({strateg
 vim.keymap.set('n', '<leader>trs', "<cmd>lua require('neotest').run.stop()<CR>")
 vim.keymap.set('n', '<leader>ts', "<cmd>lua require('neotest').summary.toggle()<CR>")
 vim.keymap.set('n', '<leader>to', "<cmd>lua require('neotest').output_panel.toggle()<CR>")
+
+--inc-rename
+vim.keymap.set("n", "<leader>rn", ":IncRename ")

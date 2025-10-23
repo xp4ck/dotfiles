@@ -1,31 +1,31 @@
 # Colors Modus-Operandi
-# [colors.normal]
-# black = '#f2f2f2'
-# red = '#a60000'
-# green = '#006800'
-# yellow = '#6f5500'
-# blue = '#0031a9'
-# magenta = '#721045'
-# cyan = '#005e8b'
-# white = '#000000'
-# [colors.bright]
-# black = '#c4c4c4'
-# red = '#a0132f'
-# green = '#00663f'
-# yellow = '#7a4f2f'
-# blue = '#0000b0'
-# magenta = '#531ab6'
-# cyan = '#005f5f'
-# white = '#595959'
-# [colors.cursor]
-# cursor = '#000000'
-# text = '#ffffff'
-# [colors.primary]
-# background = '#ffffff'
-# foreground = '#000000'
-# [colors.selection]
-# background = '#bdbdbd'
-# text = '#000000'
+[colors.normal]
+black = '#f2f2f2'
+red = '#a60000'
+green = '#006800'
+yellow = '#6f5500'
+blue = '#0031a9'
+magenta = '#721045'
+cyan = '#005e8b'
+white = '#000000'
+[colors.bright]
+black = '#c4c4c4'
+red = '#a0132f'
+green = '#00663f'
+yellow = '#7a4f2f'
+blue = '#0000b0'
+magenta = '#531ab6'
+cyan = '#005f5f'
+white = '#595959'
+[colors.cursor]
+cursor = '#000000'
+text = '#ffffff'
+[colors.primary]
+background = '#ffffff'
+foreground = '#000000'
+[colors.selection]
+background = '#bdbdbd'
+text = '#000000'
 #####################
 
 # Colors Modus-Vivendi
@@ -59,34 +59,58 @@
 ####################
 
 # Colors Ef-Elea-Dark
-[colors.normal]
-black = '#303332'
-red = '#ff656a'
-green = '#7fc87f'
-yellow = '#cac85f'
-blue = '#57aff6'
-magenta = '#f59acf'
-cyan = '#6fcfd2'
-white = '#eaf2ef'
-[colors.bright]
-black = '#5e6160'
-red = '#fa7f88'
-green = '#50cf89'
-yellow = '#cfb27f'
-blue = '#62cfef'
-magenta = '#cfaaff'
-cyan = '#60d5c2'
-white = '#969faf'
-[colors.cursor]
-cursor = '#ef7fa8'
-text = '#222524'
-[colors.primary]
-background = '#222524'
-foreground = '#eaf2ef'
-[colors.selection]
-background = '#543040'
-text = '#eaf2ef'
+# [colors.normal]
+# black = '#303332'
+# red = '#ff656a'
+# green = '#7fc87f'
+# yellow = '#cac85f'
+# blue = '#57aff6'
+# magenta = '#f59acf'
+# cyan = '#6fcfd2'
+# white = '#eaf2ef'
+# [colors.bright]
+# black = '#5e6160'
+# red = '#fa7f88'
+# green = '#50cf89'
+# yellow = '#cfb27f'
+# blue = '#62cfef'
+# magenta = '#cfaaff'
+# cyan = '#60d5c2'
+# white = '#969faf'
+# [colors.cursor]
+# cursor = '#ef7fa8'
+# text = '#222524'
+# [colors.primary]
+# background = '#222524'
+# foreground = '#eaf2ef'
+# [colors.selection]
+# background = '#543040'
+# text = '#eaf2ef'
 ####
+
+# [colors.primary]
+# background = "#272822"
+# foreground = "#f8f8f2"
+#
+# [colors.normal]
+# black = "#272822"
+# red = "#f92672"
+# green = "#a6e22e"
+# yellow = "#f4bf75"
+# blue = "#66d9ef"
+# magenta = "#ae81ff"
+# cyan = "#a1efe4"
+# white = "#f8f8f2"
+#
+# [colors.bright]
+# black = "#75715e"
+# red = "#f92672"
+# green = "#a6e22e"
+# yellow = "#f4bf75"
+# blue = "#66d9ef"
+# magenta = "#ae81ff"
+# cyan = "#a1efe4"
+# white = "#f9f8f5"
 
 [env]
 TERM = "xterm-256color"
@@ -96,7 +120,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 opacity = 1
 
 [font]
-size = 12.5
+size = 13
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"

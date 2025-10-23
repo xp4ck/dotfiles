@@ -9,8 +9,6 @@ plugins=(
   git
   encode64
   extract
-  httpie
-  pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -28,10 +26,3 @@ export GOPATH="$HOME/go"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/go/bin
-
-# pyenv stuff
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/datagrip/bin:$PATH

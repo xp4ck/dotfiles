@@ -42,5 +42,9 @@ return require('lazy').setup({
     build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
   },
   { "oonamo/ef-themes.nvim" },
-  { "sainnhe/sonokai" }
+  { "hedyhli/outline.nvim" },
+  {
+    "smjonas/inc-rename.nvim",
+    opts = {}
+  },
 })
