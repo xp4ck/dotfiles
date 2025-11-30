@@ -2,6 +2,12 @@ require("modus-themes").setup({
     style = "modus_operandi",
     transparent = false,
 })
+-- require("ef-themes").setup({
+--     light = "ef-elea-dark",
+--     dark = "ef-elea-dark",
+--     transparent = false,
+-- })
+-- vim.cmd.colorscheme 'ef-theme'
 vim.cmd.colorscheme 'modus'
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
