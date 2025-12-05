@@ -53,3 +53,5 @@ vim.keymap.set('n', '<leader>to', "<cmd>lua require('neotest').output_panel.togg
 
 --inc-rename
 vim.keymap.set("n", "<leader>rn", ":IncRename ")
+
+vim.keymap.set("n", "<leader>fd", "<cmd>lua vim.diagnostic.open_float()<CR>")
