@@ -11,9 +11,11 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', {})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {})
 
--- neo-tree
-vim.keymap.set('n', '<C-n>', '<cmd> Neotree toggle=true source=filesystem reveal=true<CR>', {})
-vim.keymap.set('n', '<C-g>', '<cmd> Neotree toggle=true source=git_status reveal=true<CR>', {})
+-- files
+local minifiles_toggle = function(...)
+if not MiniFiles.close() then MiniFiles.open(...) end
+end
+vim.keymap.set('n', '<C-n>', minifiles_toggle, {})
 
 -- outline
 

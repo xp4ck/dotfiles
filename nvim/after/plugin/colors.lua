@@ -2,13 +2,17 @@ require("modus-themes").setup({
     style = "modus_operandi",
     transparent = false,
 })
+vim.cmd.colorscheme 'modus'
 -- require("ef-themes").setup({
---     light = "ef-elea-dark",
---     dark = "ef-elea-dark",
+--     light = "ef-bio",
+--     dark = "ef-bio",
 --     transparent = false,
 -- })
 -- vim.cmd.colorscheme 'ef-theme'
-vim.cmd.colorscheme 'modus'
+-- require("monokai-pro").setup({
+--     filter = "machine",
+-- })
+-- vim.cmd.colorscheme "monokai-pro"
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })

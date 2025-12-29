@@ -21,3 +21,4 @@ vim.opt.termguicolors = true
 require("plugins")
 require("mappings")
 require("set")
+vim.lsp.enable({"basedpyright", "lua_ls", "gopls"})
