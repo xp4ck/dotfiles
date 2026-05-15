@@ -57,19 +57,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 local plugins = {
   {
-    "loctvl842/monokai-pro.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("monokai-pro").setup({
-        filter = "octagon",
-      })
-      vim.cmd.colorscheme("monokai-pro")
-    end,
+      "aktersnurra/no-clown-fiesta.nvim",
+      lazy = false,
   },
   {
     "nvim-mini/mini.nvim",
     version = "*",
+    lazy = false,
     config = function()
       require("mini.files").setup({})
       require("mini.pairs").setup({})
@@ -135,6 +129,10 @@ local plugins = {
         "<leader>fb",
         function() require("telescope.builtin").buffers() end,
       },
+      {
+        "<leader>fr",
+        function() require("telescope.builtin").lsp_references() end,
+      },
     },
   },
   {
@@ -167,10 +165,10 @@ local plugins = {
 }
 require("lazy").setup(plugins, {
   defaults = { lazy = true },
-  install = { colorscheme = { "monokai-pro" } },
   checker = { enabled = false },
   change_detection = { notify = false },
 })
+vim.cmd.colorscheme("no-clown-fiesta")
 -------------------------------------------------------------------------------------
 
 -- MAPPINGS
@@ -234,4 +232,3 @@ vim.api.nvim_create_autocmd('FileType', {
     end
   end,
 })
-

@@ -1,245 +1,68 @@
-# SONOKAI ATLANTIS
+# no-clown-fiesta (light)
+# [colors.primary]
+# background = "0xe1e1e1"
+# foreground = "0x151515"
+#
+# [colors.cursor]
+# text = "0xd0d0d0"
+# cursor = "0x151515"
+#
+# [colors.selection]
+# text = "0x151515"
+# background = "0xcfcfcf"
+#
+# [colors.normal]
+# black = "0x151515"
+# red = "0x874e42"
+# green = "0x677940"
+# yellow = "0xb89058"
+# blue = "0x8ba1bf"
+# magenta = "0xaa759f"
+# cyan = "0x3e5f66"
+# white = "0x373737"
+#
+# [colors.bright]
+# black = "0xaaaaaa"
+# red = "0x984936"
+# green = "0x586935"
+# yellow = "0xab8550"
+# blue = "0x57788d"
+# magenta = "0xaa749f"
+# cyan = "0x51657b"
+# white = "0x151515"
+
+# no-clown-fiesta (dark)
 [colors.primary]
-background = "0x2a2f38"
-foreground = "0xe1e3e4"
+background = "0x151515"
+foreground = "0xe1e1e1"
+
+[colors.cursor]
+text = "0x151515"
+cursor = "0xd0d0d0"
+
+[colors.selection]
+text = "0xe1e1e1"
+background = "0x202020"
 
 [colors.normal]
-black = "0x181a1c"
-red = "0xff6578"
-green = "0x9dd274"
-yellow = "0xeacb64"
-blue = "0x72cce8"
-magenta = "0xba9cf3"
-cyan = "0xf69c5e"
-white = "0xe1e3e4"
+black = "0x151515"
+red = "0xb46958"
+green = "0x90a959"
+yellow = "0xf4bf75"
+blue = "0xbad7ff"
+magenta = "0xaa759f"
+cyan = "0x88afa2"
+white = "0xafafaf"
 
 [colors.bright]
-black = "0x828a9a"
-red = "0xff6578"
-green = "0x9dd274"
-yellow = "0xeacb64"
-blue = "0x72cce8"
-magenta = "0xba9cf3"
-cyan = "0xf69c5e"
-white = "0xe1e3e4"
-# Colors Ef-Eagle
-# [colors.normal]
-# black = '#e4dbc0'
-# red = '#882000'
-# green = '#226022'
-# yellow = '#6b4500'
-# blue = '#113384'
-# magenta = '#822478'
-# cyan = '#125a7f'
-# white = '#231a1f'
-# [colors.bright]
-# black = '#aea88e'
-# red = '#8f0038'
-# green = '#006e50'
-# yellow = '#775228'
-# blue = '#000080'
-# magenta = '#50119f'
-# cyan = '#00676f'
-# white = '#685f53'
-# [colors.cursor]
-# cursor = '#774400'
-# text = '#f1ecd0'
-# [colors.primary]
-# background = '#f1ecd0'
-# foreground = '#231a1f'
-# [colors.selection]
-# background = '#ddc5af'
-# text = '#231a1f'
-# Colors MONOCHROME
-# [colors]
-# [colors.primary]
-# background = "#282828"
-# foreground = "#d4d4d4"
-# dim_foreground = "#505050"
-#
-# [colors.cursor]
-# text = "#282828"
-# cursor = "#d4d4d4"
-#
-# [colors.vi_mode_cursor]
-# text = "#282828"
-# cursor = "#d4d4d4"
-#
-# [colors.selection]
-# text = "CellForeground"
-# background = "#505050"
-#
-# [colors.normal]
-# black = "#3c3c3c"
-# red = "#d4d4d4"
-# green = "#d4d4d4"
-# yellow = "#d4d4d4"
-# blue = "#d4d4d4"
-# magenta = "#d4d4d4"
-# cyan = "#d4d4d4"
-# white = "#d4d4d4"
-#
-# [colors.bright]
-# black = "#767676"
-# red = "#ffffff"
-# green = "#ffffff"
-# yellow = "#ffffff"
-# blue = "#ffffff"
-# magenta = "#ffffff"
-# cyan = "#ffffff"
-# white = "#ffffff"
-#
-# [colors.dim]
-# black = "#323232"
-# red = "#888888"
-# green = "#888888"
-# yellow = "#888888"
-# blue = "#888888"
-# magenta = "#888888"
-# cyan = "#888888"
-# white = "#888888"
-####################
-# Colors Modus-Operandi
-# [colors.normal]
-# black = '#f2f2f2'
-# red = '#a60000'
-# green = '#006800'
-# yellow = '#6f5500'
-# blue = '#0031a9'
-# magenta = '#721045'
-# cyan = '#005e8b'
-# white = '#000000'
-# [colors.bright]
-# black = '#c4c4c4'
-# red = '#a0132f'
-# green = '#00663f'
-# yellow = '#7a4f2f'
-# blue = '#0000b0'
-# magenta = '#531ab6'
-# cyan = '#005f5f'
-# white = '#595959'
-# [colors.cursor]
-# cursor = '#000000'
-# text = '#ffffff'
-# [colors.primary]
-# background = '#ffffff'
-# foreground = '#000000'
-# [colors.selection]
-# background = '#bdbdbd'
-# text = '#000000'
-#####################
-
-# Colors Modus-Vivendi
-# [colors.normal]
-# black = '#1e1e1e'
-# red = '#ff5f59'
-# green = '#44bc44'
-# yellow = '#d0bc00'
-# blue = '#2fafff'
-# magenta = '#feacd0'
-# cyan = '#00d3d0'
-# white = '#ffffff'
-# [colors.bright]
-# black = '#535353'
-# red = '#ff7f9f'
-# green = '#00c06f'
-# yellow = '#dfaf7a'
-# blue = '#00bcff'
-# magenta = '#b6a0ff'
-# cyan = '#6ae4b9'
-# white = '#989898'
-# [colors.cursor]
-# cursor = '#ffffff'
-# text = '#000000'
-# [colors.primary]
-# background = '#000000'
-# foreground = '#ffffff'
-# [colors.selection]
-# background = '#5a5a5a'
-# text = '#ffffff'
-####################
-
-# Colors Ef-Elea-Dark
-# [colors.normal]
-# black = '#303332'
-# red = '#ff656a'
-# green = '#7fc87f'
-# yellow = '#cac85f'
-# blue = '#57aff6'
-# magenta = '#f59acf'
-# cyan = '#6fcfd2'
-# white = '#eaf2ef'
-# [colors.bright]
-# black = '#5e6160'
-# red = '#fa7f88'
-# green = '#50cf89'
-# yellow = '#cfb27f'
-# blue = '#62cfef'
-# magenta = '#cfaaff'
-# cyan = '#60d5c2'
-# white = '#969faf'
-# [colors.cursor]
-# cursor = '#ef7fa8'
-# text = '#222524'
-# [colors.primary]
-# background = '#222524'
-# foreground = '#eaf2ef'
-# [colors.selection]
-# background = '#543040'
-# text = '#eaf2ef'
-####
-
-# [colors.primary]
-# background = "#272822"
-# foreground = "#f8f8f2"
-#
-# [colors.normal]
-# black = "#272822"
-# red = "#f92672"
-# green = "#a6e22e"
-# yellow = "#f4bf75"
-# blue = "#66d9ef"
-# magenta = "#ae81ff"
-# cyan = "#a1efe4"
-# white = "#f8f8f2"
-#
-# [colors.bright]
-# black = "#75715e"
-# red = "#f92672"
-# green = "#a6e22e"
-# yellow = "#f4bf75"
-# blue = "#66d9ef"
-# magenta = "#ae81ff"
-# cyan = "#a1efe4"
-# white = "#f9f8f5"
-
-### MONOKAI PRO
-# Default colors
-# [colors.primary]
-# background = '#2D2A2E'
-# foreground = '#fff1f3'
-#
-# # Normal colors
-# [colors.normal]
-# black   = '#2c2525'
-# red     = '#fd6883'
-# green   = '#adda78'
-# yellow  = '#f9cc6c'
-# blue    = '#f38d70'
-# magenta = '#a8a9eb'
-# cyan    = '#85dacc'
-# white   = '#fff1f3'
-#
-# # Bright colors
-# [colors.bright]
-# black   = '#72696a'
-# red     = '#fd6883'
-# green   = '#adda78'
-# yellow  = '#f9cc6c'
-# blue    = '#f38d70'
-# magenta = '#a8a9eb'
-# cyan    = '#85dacc'
-# white   = '#fff1f3'
+black = "0x727272"
+red = "0x984936"
+green = "0x586935"
+yellow = "0xab8550"
+blue = "0xa2b5c1"
+magenta = "0xaa749f"
+cyan = "0x51657b"
+white = "0xe1e1e1"
 
 [env]
 TERM = "xterm-256color"
@@ -247,27 +70,8 @@ TERM = "xterm-256color"
 [window]
 opacity = 1
 
-# [font]
-# size = 12
-#
-# [font.bold]
-# family = "Hurmit Nerd Font"
-# style = "Bold"
-#
-# [font.bold_italic]
-# family = "Hurmit Nerd Font"
-# style = "Bold Italic"
-#
-# [font.italic]
-# family = "Hurmit Nerd Font"
-# style = "Italic"
-#
-# [font.normal]
-# family = "Hurmit Nerd Font"
-# style = "Regular"
-
 [font]
-size = 13
+size = 15
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
